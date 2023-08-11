@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+/* navigation bar */
+  .menu-container {
+    color: #fff;
+    background-color: #5995DA;
+  }
+  .menu {
+    width: 95%;
+    height: 48px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;     /* horizontal alignment*/
+    align-items: center;                /* vertical alignment (specify width) */
+                                        /* these will swap when flex-direction is defined */
+  }
+  .links{
+    display: flex;
+    justify-content: end;
+    column-gap: 22px;
+  }
+
+/* hero banner */
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  .header {
+    width: 95%;
+    height: 256px;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;               
+  }
+
+/* photo grid */
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;                   /* flex-wrap: similar to figma grid autolayout*/
+  }
+  .photo-grid-item {
+    width: 300px;
+    height: 300px;
+  }
+
+
+  .first-item {
+    order: 1;                         /* order: flex item individual order */
+  }
+  .last-item {
+    order: -1;
+  }
+  .social,
+  .subscribe {
+  align-self: flex-end;               /* align-self: flex item individual alignment */
+  margin-bottom: 20px;
+  }
+
+
+/* footer */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;                          /* flex: defines width/weight of items */
+    /* ex. item with a flex value of 2 will have more width than another item */
+    /* flex: initial - turn flex item into fixed size alongside flexible items */
+  }  
+  .footer-three {
+    flex: 2;
+  }
